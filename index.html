@@ -1,0 +1,277 @@
+<!DOCTYPE htmL>
+ <html>
+ <head>
+   <link rel="icon" href="icons/Logo.png" type="image/x-icon">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiyiselani Portfolio Website</title>
+
+   <!---custom CSS link---->
+   <link rel="stylesheet" type=" text/css" href="css/style.css">
+
+    <link rel= "stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.goog1eapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+ </head>
+ <body>
+
+  <!---header.design--->
+  <header>
+    <a href="#" class="logo">Luc<span>c</span>o.</a>
+
+    <ul class="navlist">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Education</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#Contact">Contact Me</a></li>
+    </ul>
+  </header>
+
+  <!---home section design--->
+  <section class="home"id="home">
+    <div class="home-text">
+      <div class="slide">
+        <span class="one">Hello</span>
+        <span class="two">My name is:</span>
+      </div>
+      <h1>Tiyiselani<a class="btn2">Hlongwane</a></h1>
+      <h3>Unity, Game, XR<span> Developer</span></h3>
+      <p>Unity, Game, & Extended Reality Developer with 3 years of experience in the field.
+      <br>User Interface (UI) designer, User Experience (UX) designer, & Graphic designer.
+      <br>I'm excited to bring my unique skillset to the company.</p>
+
+      <div class="button">
+        <a href="Resume.pdf" download class="btn">Download CV</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="LETTER.pdf" download class="btn">Completion Letter</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!--about section design--->
+  <section class="about" id="about">
+    <div class="about-img">
+    <img src="img/about.png">
+    </div>
+
+    <div class="about-text">
+      <h2>About<span> Me</span></h2>
+      <h4>Innovative Developer and Designer!</h4>
+      <p>As a game developer, Unity expert, and extended reality enthusiast, I bring a wealth of experience to the forefront of interactive digital experiences. My journey in the field has allowed me to master Unity, crafting engaging games that captivate audiences, and extending my expertise into the realms of virtual reality (VR), augmented reality (AR), and mixed reality (MR). Beyond technical proficiency, I am also a skilled UI and UX designer, ensuring that my creations not only push technological boundaries but also prioritize intuitive and user-friendly interfaces. In summary, I am a multifaceted developer and designer passionate about creating unforgettable, user-centric experiences across gaming, Unity development, extended reality, and UI/UX design.</p>
+
+      <button class="btn" onclick="myFunction()">My Skills</button>
+      <p id="demo"></p>
+        <script>
+          var str = "Unity Game Engine, Photon (VR Multiplayer), Unity Augmented Reality, C# and C++, Autodesk (3D's Max), HTML, CSS and JavaScript";
+          var i = 0;
+          var speed = 30;
+
+          function myFunction()
+          {
+            typeWriter();
+          }
+
+          function typeWriter() 
+          {
+            if (i < str.length)
+            {
+              document.getElementById("demo").innerHTML += str.charAt(i);
+                i++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+        </script>
+    </div>
+  </section>
+
+  <!---service section design--->
+  <section class="services" id="services">
+    <div class="main-text">
+      <p>Education and Professional Experience</p>
+      <h2>My <span> Journey</span></h2>
+
+    </div>
+
+    <div class="services-content">
+      <div class="box">
+        <div class="s-icons">
+          <i class='bx bxs-school' ></i>
+        </div>
+        <h3>Hlaluko Secondary</h3>
+          <p>After passing grade 8 in Shirilele High School in 2011, 
+          I went to Hlaluko Secondary School. A prestigious 
+          institution located down in the village called Gandlanani in Limpopo.
+          I selected Maths & Physics as my stream so that 
+          I can study IT in university. Additionally, I completed my matric in 2015.</p>
+        <a class="read"><span>Year :</span> 2012 / 2015</a>
+      </div>
+
+      <div class="box">
+        <div class="s-icons">
+          <i class='bx bx-book-open'></i>
+        </div>
+        <h3>Tshwane University</h3>
+          <p>I got accepted at Tshwane University of technology (TUT)
+          in 2017 to study Information & Communication Technology (IT). There are multiple 
+          specializations in the field of IT and each student must select one, so I specialized
+           in multimedia programming and design. Furthermore, I completed my studies in 2021.</p>
+        <a class="read"><span>Year :</span> 2017 / 2021</a>
+      </div>
+
+      <div class="box">
+        <div class="s-icons">
+          <i class='bx bxl-meta'></i>
+        </div>
+        <h3>X-Reality Lab</h3>
+          <p>This is where my professional work experience
+            comes from. As a virtual reality developer, I gained one full year experience
+            in VR development and on the hardware part of it. Now I know unity game engine
+          more better than before. I know how to develop and deploy a working software into
+          a VR headset.</p>
+        <a class="read"><span>Year :</span> 2022 / 2023</a>
+      </div>
+    </div>
+  </section>
+
+  <!--portfolio section design--->
+  <section class="Portfolio" id="Portfolio">
+    <div class="main-text">
+      <p>Watch My Work</p>
+      <h2><span>Latest</span> Projects</h2>
+    </div>
+    
+    <div class="portfolio-content">
+      <div class="row">
+        <img src="img/portfolio1.jpg">
+        <div class="layer">
+          <h5>Unity Game Engine</h5>
+          <p>I use this software to develop
+          video games for PC and VR apps.</p>
+          <a><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio2.jpg">
+        <div class="layer">
+          <h5>Sublime Text Editor</h5>
+          <p>This one is for text editing, so
+          I use it for websites development.</p>
+          <a><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio3.jpg">
+        <div class="layer">
+          <h5>Autodesk 3D's Max</h5>
+          <p>Whenever I want to design a 3D model,
+          this software helps me a lot.</p>
+          <a><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <video width="320" height="240" controls>
+        <source src="VR.mp4" type="video/mp4">
+      </video>
+      
+      <video width="320" height="240" controls>
+        <source src="Game.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="Website.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="3D Modeling.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="APS Calculator Website.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="Racing Car.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="Logo Design.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="Wedding Card.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="Appreciation.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="VMM.mp4" type="video/mp4">
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="VR Course.mp4" type="video/mp4">
+      </video>
+
+    </div>
+  </section>
+
+  <!---contact section design--->
+  <section class="contact" id="Contact">
+    <div class="contact-text">
+      <h2>Contact <span>Me!</span></h2>
+      <h4>Thank you so much for visiting my portfolio! I'm excited to engage with you.</h4>
+      <P>Looking forward to bringing my unique skillset to the table.</P>
+
+      <div class="list">
+        <p><strong>Contact<span> Details:</span></strong></p>
+        <li><a>071 930 2200</a></li>
+        <li><a>072 746 7568</a></li>
+        <li><a>Luckytiyi@gmail.com</a></li>
+        <li><a>Malibongwe Street, Soshanguve L, Gauteng, 0152, South Africa</a></li>
+      </div>
+
+      <div class="contact-icons">
+        <a href="#"><img src="icons/phone.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><img src="icons/whatsapp.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><img src="icons/facebook.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><img src="icons/linkedin.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><img src="icons/email.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action= "">
+        <input type="name" placeholder="Tiyiselani Hlongwane" required>
+        <input type="email" placeholder="luckytiyi@gmail.com" required>
+        <input type=""placeholder="+27 71 930 2200" required>
+        <textarea name="" id="" cols="35" rows="10" placeholder="Thank you for your time!"required></textarea>
+        <div class="slide">
+        <span class="one">Thank You!</span>
+      </div>
+      </form>
+    </div>
+  </section>
+
+  <!---end section design--->
+  <section class="end">
+    <div class="last-text">
+      <p>©2024 Tiyiselani Lucky Lucco. All Rights Reserved.</p>
+    </div>
+      <div class="top">
+        <a href="#home"><i><img src="icons/last.png"></i></a>
+    </div>
+  </section>
+
+  <!---custom js link--->
+  <script type="text/javascript" src="js/script.js"></script>
+
+ </body>
+ </html>
